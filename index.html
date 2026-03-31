@@ -16,16 +16,28 @@
 
     <header class="site-header" aria-label="Top">
       <div class="wrap header-inner">
-        <p class="brand">CoachMVP</p>
-        <a class="header-link" href="#apply">Apply</a>
+        <a class="brand-link" href="index.html" aria-label="CoachMVP home">
+          <p class="brand">CoachMVP</p>
+        </a>
+
+        <nav class="site-nav" aria-label="Primary">
+          <a class="header-link" href="how-it-works.html">How it works</a>
+          <a class="header-link header-link-primary" href="#apply">Apply</a>
+        </nav>
       </div>
     </header>
 
     <main id="main">
       <section class="hero" aria-labelledby="hero-title">
         <div class="wrap hero-inner">
-          <p class="eyebrow">Built by the operator behind <a href="https://onlyusedtesla.com/" target="_blank" rel="noopener noreferrer">OnlyUsedTesla.com</a> · 11 years online</p>
+          <p class="eyebrow">
+            Built by the operator behind
+            <a href="https://onlyusedtesla.com/" target="_blank" rel="noopener noreferrer">OnlyUsedTesla.com</a>
+            · 11 years online
+          </p>
+
           <h1 id="hero-title">Launch a one-car lead-gen site with me.</h1>
+
           <p class="lede">
             I help a small number of people pick one vehicle niche, build a simple site fast,
             publish it, and get it live. After launch, you manage the leads, the dealer outreach,
@@ -34,10 +46,12 @@
 
           <div class="hero-actions">
             <a class="button button-primary" href="#apply">Apply for a call</a>
-            <p class="price-note">
-              Founding rate: <strong>$1,000</strong> for the first few candidates.
-            </p>
+            <a class="button" href="how-it-works.html">See how it works</a>
           </div>
+
+          <p class="price-note">
+            Founding rate: <strong>$1,000</strong> for the first few candidates.
+          </p>
 
           <ul class="hero-points" aria-label="Quick highlights">
             <li>One niche. One site. One simple offer.</li>
@@ -60,6 +74,47 @@
         </div>
       </section>
 
+      <section class="section" aria-labelledby="steps-preview-title">
+        <div class="wrap">
+          <div class="stack-intro">
+            <h2 id="steps-preview-title">How it works</h2>
+            <p class="section-copy">
+              Simple on purpose. We get the first version live fast. You handle the business side.
+            </p>
+          </div>
+
+          <ol class="step-grid" aria-label="CoachMVP process preview">
+            <li class="step-card">
+              <p class="step-number">01</p>
+              <h3>Pick one lane</h3>
+              <p class="card-copy">One brand, one model family, or one clear seller angle.</p>
+            </li>
+
+            <li class="step-card">
+              <p class="step-number">02</p>
+              <h3>Research the demand</h3>
+              <p class="card-copy">I look at search demand, buyer intent, and the domain direction.</p>
+            </li>
+
+            <li class="step-card">
+              <p class="step-number">03</p>
+              <h3>Build the site live</h3>
+              <p class="card-copy">We put the first version together and you leave with the files.</p>
+            </li>
+
+            <li class="step-card">
+              <p class="step-number">04</p>
+              <h3>You run the leads</h3>
+              <p class="card-copy">You handle traffic, texts, seller follow-up, and the close.</p>
+            </li>
+          </ol>
+
+          <div class="section-actions">
+            <a class="button button-dark" href="how-it-works.html">Read the full breakdown</a>
+          </div>
+        </div>
+      </section>
+
       <section class="section" aria-labelledby="fit-title">
         <div class="wrap grid-two">
           <div>
@@ -71,6 +126,7 @@
               <li>You want a real asset, not just theory.</li>
             </ul>
           </div>
+
           <div>
             <h2>Not a fit</h2>
             <ul class="detail-list">
@@ -137,7 +193,7 @@
                 id="vehicle"
                 name="vehicle"
                 type="text"
-                placeholder="Example: Tesla, Tacoma, Jeep Wrangler"
+                placeholder="Example: Tesla, Porsche, Tacoma, Jeep Wrangler"
                 required
               />
             </div>
@@ -185,7 +241,8 @@
     <footer class="site-footer">
       <div class="wrap footer-inner">
         <p>
-          CoachMVP · Built by <a href="https://onlyusedtesla.com/" target="_blank" rel="noopener noreferrer">OnlyUsedTesla.com</a>
+          CoachMVP · Built by
+          <a href="https://onlyusedtesla.com/" target="_blank" rel="noopener noreferrer">OnlyUsedTesla.com</a>
         </p>
       </div>
     </footer>
@@ -229,7 +286,8 @@
           const body = bodyLines.join('\n');
           const mailto = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
-          status.textContent = 'Your email app should open with a prefilled application. If it does not, email contact@onlyusedtesla.com directly.';
+          status.textContent =
+            'Your email app should open with a prefilled application. If it does not, email contact@onlyusedtesla.com directly.';
           window.location.href = mailto;
         });
       })();
